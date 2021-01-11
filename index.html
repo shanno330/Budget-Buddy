@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+    <link rel = "stylesheet" href = "style.css"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <div class = container>
+    <div class = "top">
+       <h1>Budget Buddy</h1>
+       <div class= "design"> 
+           <button class = "reset" onClick="window.location.reload();">Reset</button>
+        <a href ="http://127.0.0.1:5503/filelogin.html" class = "logOut">Log Out</a>
+       </div>
+    </div>
+    <div class = "inputContainer">
+        <div class ="budget">  
+            <p id = "weeklyLabel">Weekly Budget Amount</p> 
+            <p class = "displayTotal"> </p> 
+            <div class ="input"> 
+                <input class ="budgetAmount" type = "number" placeholder = "Enter Budget Amount"><br>        
+                <button class = "submitBudget">Submit</button>
+                <button class = "editBudget">Edit</button>
+            </div>
+        </div>
+        <div class = "purchased"> 
+            <label for="expenses" class = "purchasedTitle">Add Transaction </label>            
+            <select id= "expenses">
+            <option class= "category">Entertainment</option>
+            <option  class= "category">Food</option>
+            <option  class= "category">Clothing</option>
+            <option  class= "category">Bills</option>            
+            </select>
+            <div class= "spentItem">
+                <input type="text" id = "stuff" placeholder ="Description">
+                <input class = "purchaseAmount" id= "purchaseAmount" type = "number" placeholder = "Amount">        
+                <button class = "purchase" id="purchase">Add Expenses</button>       
+            </div>
+        </div> 
+    </div>
+    <div class="center">
+        <div class="total">
+            <p class="totalAmt"> Total Amount
+                <p id= "indiv">$ <span id ="amt">0.00</span></p>
+            </p>
+        </div>
+        <div class = "balance">
+            <p class= "label">Remaining Balance
+            <p id = "spendLabel">$ <span id = updateBalance >0.00</span></p></p>
+        </div>
+    </div>      
+    <div class= "updateValue">
+        <div id="totals">
+            <h4>Spending by Category</h4>
+            <canvas id="chart"></canvas>
+            <p id="entertainment"></p>
+            <p id="food"></p>
+            <p id="clothing"></p>
+            <p id="bills"></p>
+        </div>
+        <div class= "s">
+            <h4 class = "listLabel">Spending by Items</h4>
+            <span id ="listOfItems"></span>
+        </div>
+    </div>  
+</div>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+
+        
+      
+          

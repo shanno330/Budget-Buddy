@@ -1,0 +1,52 @@
+h1{
+    margin-top: 20px;
+    margin-bottom: 55px;
+    font-family: 'Courgette', cursive;
+    text-shadow:-1px 3px 0 yellow;
+    color: green;
+    font-size: 400%;
+}
+#userName,#passWord{
+    display: flex;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    border-color: green;
+}
+#enterInfo{
+    width:40%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: yellow;
+    border: 4px solid green;
+    text-align: center;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding:40px;
+    margin:10%;
+    border-radius: 10px;
+    border: 10px double yellow
+} 
+body{
+    display: flex;
+    justify-content:center;
+    background-image: url(https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Money-HD-Wallpapers-1080p-14.jpg);
+    background-size: cover;
+    align-items: center;
+}
+p{
+    color:yellow;
+    font-size:20px;
+}
+html{
+    align-items: center;
+}
